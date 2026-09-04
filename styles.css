@@ -15,7 +15,7 @@
   --sans: "Outfit", "Avenir Next", "Segoe UI", sans-serif;
 }
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; overflow-x: clip; }
+html { scroll-behavior: smooth; }
 html, body { margin: 0; padding: 0; }
 body { padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right); }
 body {
@@ -333,11 +333,22 @@ input:focus, textarea:focus { border-bottom-color: var(--red); }
 .page-hero { padding: 1.6rem 0 .8rem; }
 .page-hero h1 { max-width: 16ch; }
 
-html, body { overflow-x: hidden; }
+/* overflow-x on html/body breaks position:sticky; clip wide bits on sections instead */
+main, .site-footer, .hero, .trust { overflow-x: clip; }
 img, video { max-width: 100%; height: auto; }
 .gallery img { height: 210px; }
 
 @media (max-width: 1080px) {
+  .site-header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+  body {
+    padding-top: calc(3.4rem + env(safe-area-inset-top, 0px));
+  }
   .wrap { width: min(1180px, calc(100% - 28px)); }
   .header-inner {
     display: flex;

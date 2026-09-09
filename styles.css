@@ -1,9 +1,9 @@
-/* Ledford & Associates — 2026 rebuild */
+/* Ledford Construction LLC — 2026 rebuild */
 :root {
-  --navy: #0b1c33;
-  --navy-2: #142848;
-  --red: #c0392b;
-  --red-d: #9c2d22;
+  --navy: #0a1834;
+  --navy-2: #12264a;
+  --red: #e21824;
+  --red-d: #b8141c;
   --paper: #f3efe6;
   --paper-2: #e8e2d6;
   --ink: #12151a;
@@ -76,12 +76,12 @@ p { margin: 0 0 .7rem; color: var(--muted); }
   font-size: .95rem;
   letter-spacing: .06em;
   text-transform: uppercase;
-  color: #1e5fd6;
+  color: #0253d1;
 }
 .logo-text em {
-  font-style: italic;
+  font-style: normal;
   font-size: .58rem;
-  letter-spacing: .14em;
+  letter-spacing: .18em;
   text-transform: uppercase;
   font-weight: 600;
   color: var(--red);
@@ -165,7 +165,7 @@ p { margin: 0 0 .7rem; color: var(--muted); }
 .hero {
   min-height: 58vh;
   background:
-    linear-gradient(105deg, rgba(11,28,51,.88) 0%, rgba(11,28,51,.62) 46%, rgba(11,28,51,.42) 100%),
+    linear-gradient(105deg, rgba(10,24,52,.88) 0%, rgba(10,24,52,.62) 46%, rgba(10,24,52,.42) 100%),
     url("images/hero.jpg") center 42%/cover no-repeat;
   color: var(--white);
   display: grid;
@@ -326,8 +326,8 @@ input:focus, textarea:focus { border-bottom-color: var(--red); }
 .site-footer a:hover { color: var(--white); }
 .foot-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 2rem; }
 .site-footer .logo .mark { height: 38px; }
-.site-footer .logo-text strong { color: #8cb4ff; }
-.site-footer .logo-text em { color: #e8b0a8; }
+.site-footer .logo-text strong { color: #6ea6ff; }
+.site-footer .logo-text em { color: #ff6b6b; }
 .legal { margin-top: 1.4rem; padding-top: .9rem; border-top: 1px solid rgba(255,255,255,.12); color: rgba(251,250,247,.5); font-size: .78rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
 
 .page-hero { padding: 1.6rem 0 .8rem; }
